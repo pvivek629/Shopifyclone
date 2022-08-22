@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            screen:{
+                'sm': '640px',
+                // => @media (min-width: 640px) { ... }
+
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+
+                'lg': '976px',
+                // => @media (min-width: 1024px) { ... },
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    
+    <title>Document</title>
+</head>
+<body class="font-[ShopifySans, Helvetica, Arial, sans-serif] overflow-x-hidden">
+    <div class="bg-white bg-[#fbf7ed] lg:h-[1110px] w-full">
+
+        <!-- First Page -->
+        <div>
+            <!-- Navbar -->
+            <div class="flex lg:fixed  lg:h-[100px] bg-[#fbf7ed] py-2 pl-4 lg:pl-[100px] lg:pt-[25px] lg:w-[100%]">
+                <img class="w-[120px] h-10 lg:w-[155px] lg:h-[48px]" src="/Photo/logo.png" alt="">
+                <div class="hidden lg:flex">
+                    <div class="flex">
+                        <p class="ml-[50px] mt-[10px] text-[#42474c] text-[22px] font-medium">Start</p>
+                        <i class="fa-solid fa-angle-down text-[16px] pt-[19px] pl-[10px]"></i>
+                    </div>
+                    <div class="flex">
+                        <p class="text-[#42474c] mt-[10px] text-[22px] ml-[40px] font-medium">Sell</p>
+                        <i class="fa-solid fa-angle-down text-[16px] pt-[19px] pl-[10px]"></i>
+                    </div>
+                    <div class="flex">
+                        <p class="text-[#42474c] mt-[10px] text-[21px] ml-[40px] font-medium">Market</p>
+                        <i class="fa-solid fa-angle-down text-[16px] pt-[19px] pl-[10px]"></i>
+                    </div>
+                    <div class="flex">
+                        <p class="text-[#42474c] mt-[10px] text-[21px] ml-[40px] font-medium">Manage</p>
+                        <i class="fa-solid fa-angle-down text-[16px] pt-[19px] pl-[10px]"></i>
+                    </div>
+                    <div class="flex">
+                        <p class="text-[#42474c] mt-[10px] text-[22px] ml-[350px] font-medium">Pricing</p>
+                    </div>
+                    <div class="flex">
+                        <p class="text-[#42474c] mt-[10px] text-[22px] ml-[40px] font-medium">Learn</p>
+                        <i class="fa-solid fa-angle-down text-[16px] pt-[23px] pl-[10px]"></i>
+                    </div>
+                </div>
+                <p class="text-[#42474c] mt-[7px] lg:mt-[10px] text-[22px] ml-28 lg:ml-[40px] font-medium">Log in</p>
+                <div class="hidden lg:block ml-[40px] mb-[15px] px-[25px] pt-[15px] pb-[15px] bg-[#3c8060] rounded-[7px] hover:bg-[#214c40] cursor-pointer">
+                    <p class="text-[21px] font-bold text-[#ffffff] ">Try for free</p>
+                </div>
+                <div class="lg:hidden ml-8 mt-[12px]">
+                    <i class="fa-solid fa-bars text-[25px] text-[#42474c] "></i>
+                </div>
+            </div>
+
+            <div class="block pt-[60px] lg:flex ml-6 mr-4 w-full  lg:ml-[110px] lg:pt-[100px]">
+                <div class="">
+                    <p class="text-[30px] mr-4 lg:text-[56px] lg:mt-[133px] font-bold lg:leading-[80px]  text-[#214c40] lg:w-[600px]">The easiest way to sell online in India</p>
+                    <p class="text-[19px] mr-8 lg:text-[26px] mt-[20px] lg:mt-[40px] lg:w-[620px] text-[#7e7178] ">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
+                    <div class="lg:flex mt-[35px]">
+                        <input class="py-4 lg:py-[17px] lg:text-[22px] pl-4 lg:pl-[16px] pr-36 lg:pr-[174px]  rounded-[8px] border border-[#888d92] outline-[#214c40]" type="email" placeholder="Enter your email address" name="" id="">
+                        <div class="bg-[#3c8060] rounded-[7px] mr-8 lg:mr-[0px] lg:ml-[25px] mt-2 lg:mt-[2px] lg:mb-[2px] hover:bg-[#214c40] cursor-pointer">
+                            <p class="py-3 lg:py-[0px] text-center lg:px-[25px] lg:pt-[16px]  text-[21px] font-bold text-[#ffffff]">Try for free</p>
+                        </div>
+                    </div>
+                    <p class="lg:w-[620px] mr-12 lg:mr-[0px] text-[13px] lg:text-[16px] mt-[30px] text-black lg:text-[#7e7178]">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+                </div>
+                <div>
+                    <video class="lg:w-[730px] lg:ml-[110px] mt-12 lg:mt-[110px] " muted="muted" loop="loop" playsinline="playsinline" data-autoplay="true" data-lazyload="true" data-poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/exp-inbrochurebannerv2-video-poster-f61611dccbbf0aaa60f0e6aa3662448acc8ab35938a29bae99a61366874a43ef.png" class="video__video" autoplay="" poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/exp-inbrochurebannerv2-video-poster-f61611dccbbf0aaa60f0e6aa3662448acc8ab35938a29bae99a61366874a43ef.png"><source data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-firstsale-7285dab321cc85c3b6ac858bce1a2b0a2db3504db0937e1883dc96d195524da5.webm" type="video/webm" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-firstsale-7285dab321cc85c3b6ac858bce1a2b0a2db3504db0937e1883dc96d195524da5.webm"><source data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-firstsale-940ad0c283f5ed6a3798ba1cbd43a74eeae14774d2822049989d359a8efc1b4a.mp4" type="video/mp4" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-firstsale-940ad0c283f5ed6a3798ba1cbd43a74eeae14774d2822049989d359a8efc1b4a.mp4"></video>
+                </div>
+            </div> 
+        </div>
+
+
+        <!-- Second Page -->
+
+        <div class="bg-[#214c40] lg:h-[1630px] mt-[38px] lg:mt-[120px] pr-4 lg:pr-[0px]">
+            <div class="pt-[60px] lg:pt-[110px] ml-4 lg:ml-[110px]">
+                <p class="text-[27px] lg:text-[55px] text-[#ffffff]">Bring your business online</p>
+                <p class="mt-[10px] text-[17px] lg:text-[20.5px] text-[#ffffff]">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+                <p class="mt-[20px] text-[#ffffff] lg:text-[21px] font-bold">Explore more examples -></p>
+                <div class="mt-[40px] lg:mt-[80px] lg:flex">
+                    <div class="flex">
+                        <div class="">
+                            <img alt="" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/blue-tokai/home-example-small-4144844351e226a9896cffee4bebdaeecb17897116c33a753bfd086b8b621e74.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/blue-tokai/home-example-large-5be147333b5b97176173c550d913fc54bc6e5c3c9e5ecfe9601df2a5a4e400b9.jpg?quality=50 2x" class=" lazyloaded" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/blue-tokai/home-example-small-4144844351e226a9896cffee4bebdaeecb17897116c33a753bfd086b8b621e74.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/blue-tokai/home-example-large-5be147333b5b97176173c550d913fc54bc6e5c3c9e5ecfe9601df2a5a4e400b9.jpg?quality=50 2x">
+                            <p class=" lg:text-[18px] font-medium text-white mt-[20px]">FOOD & DRINK</p>
+                            <p class="lg:text-[24px] text-white">Blue Tokai</p>
+                        </div>
+                        <div class="lg:ml-[25px] ml-[15px]">
+                            <img alt="" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-small-8b1c6b138414b76150e6e00f5143c4301a07b708aa6113dd7096f4340ddfecad.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-large-36a73df801b2c2edfcd0b16da1097e2927abeefe8f0c06423ea0a321bed4e73b.jpg?quality=50 2x" class=" lazyloaded" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-small-8b1c6b138414b76150e6e00f5143c4301a07b708aa6113dd7096f4340ddfecad.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-large-36a73df801b2c2edfcd0b16da1097e2927abeefe8f0c06423ea0a321bed4e73b.jpg?quality=50 2x">
+                            <p class="lg:text-[18px] font-medium text-white mt-[20px]">JEWELRY</p>
+                            <p class="lg:text-[24px] text-white">Quirksmith</p>
+                        </div>
+                    </div>
+                    <div class="flex mt-[40px] lg:mt-[0px]">
+                        <div class="lg:ml-[25px]">
+                            <img alt="" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/crossbeats/home-example-small-099933088cbe804543fbb1b0963a5d0a16365e73e6000949b5b0ab2bf4b21503.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/crossbeats/home-example-large-6a2289a4261faab784468910e7a1b4fef50354bf997446cac7ac85bbc5ec1959.jpg?quality=50 2x" class=" lazyloaded" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/crossbeats/home-example-small-099933088cbe804543fbb1b0963a5d0a16365e73e6000949b5b0ab2bf4b21503.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/crossbeats/home-example-large-6a2289a4261faab784468910e7a1b4fef50354bf997446cac7ac85bbc5ec1959.jpg?quality=50 2x">
+                            <p class="lg:text-[18px] font-medium text-white mt-[20px]">ELECTRONICS</p>
+                            <p class="lg:text-[24px] text-white">Crossbeats</p>
+                        </div>
+                        <div class="lg:ml-[25px] ml-[15px]">
+                            <img alt="" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/mcaffeine/home-example-small-26afc247af7a3a7b1c9c585a645ccdff26e76156e98be7d9ff0fe9ecd4d3b675.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/mcaffeine/home-example-large-75bdc7686a50198c0ae2134cb882293b96b5308386a8d7a42fbf8bd0f70f4750.jpg?quality=50 2x" class=" lazyloaded" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/mcaffeine/home-example-small-26afc247af7a3a7b1c9c585a645ccdff26e76156e98be7d9ff0fe9ecd4d3b675.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/mcaffeine/home-example-large-75bdc7686a50198c0ae2134cb882293b96b5308386a8d7a42fbf8bd0f70f4750.jpg?quality=50 2x">
+                            <p class="lg:text-[18px] font-medium text-white mt-[20px]">BEAUTY</p>
+                            <p class="lg:text-[24px] text-white">Mcaffeine</p>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block ml-[25px]">
+                        <img alt="" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/bunaai/home-example-small-4575b175c798e22af5531bae02621396add507433f771db37b1515e9941f8a45.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/bunaai/home-example-large-77e630ba8c116ad0d5a6f359951433dccb0e84b75ee7f23545fe2ff9b4921148.jpg?quality=50 2x" class=" lazyloaded" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/bunaai/home-example-small-4575b175c798e22af5531bae02621396add507433f771db37b1515e9941f8a45.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/bunaai/home-example-large-77e630ba8c116ad0d5a6f359951433dccb0e84b75ee7f23545fe2ff9b4921148.jpg?quality=50 2x">
+                        <p class="text-[18px] font-medium text-white mt-[20px]">FASHION</p>
+                        <p class="text-[24px] text-white">Bunaai</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second part -->
+
+            <div class="ml-4 lg:ml-[110px] mt-[100px] lg:mt-[190px] pb-[90px] lg:pb-[0px]">
+                <p class="text-[24px] lg:text-[40px] text-white">Take the best path forward</p>
+                <div class="lg:flex mt-[40px] lg:mt-[80px]">
+                    <div class="">
+                        <i class="fa-solid fa-cart-shopping text-[30px] lg:text-[40px] text-[#c1f0d0]"></i>
+                        <p class="mt-[15px] lg:mt-[25px] lg:text-[25px] font-medium text-white">Start an online business</p>
+                        <p class="mt-[10px] lg:mt-[15px] lg:text-[21px] w-[330px] leading-[29px] text-white">Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
+                    </div>
+                    <div class="mt-[40px] lg:mt-[0px] lg:ml-[35px]">
+                        <i class="fa-solid fa-store text-[30px] lg:text-[40px] text-[#c1f0d0]"></i>
+                        <p class="mt-[15px] lg:mt-[25px] lg:text-[25px] font-medium text-white">Move your business online</p>
+                        <p class="mt-[10px] lg:mt-[15px] lg:text-[21px] w-[340px] leading-[29px] text-white">Turn your retail store into an online store and keep serving customers without missing a beat.</p>
+                    </div>
+                    <div class="mt-[40px] lg:mt-[0px] lg:ml-[35px]">
+                        <i class="fa-solid fa-repeat text-[30px] lg:text-[40px] text-[#c1f0d0]"></i>
+                        <p class="mt-[15px] lg:mt-[25px] lg:text-[25px] font-medium text-white">Switch to Shopify</p>
+                        <p class="mt-[10px] lg:mt-[15px] lg:text-[21px] w-[330px] leading-[29px] text-white">Bring your business to Shopify, no matter which ecommerce platform you’re currently using.</p>
+                    </div>
+                    <div class="mt-[40px] lg:mt-[0px] lg:ml-[35px] ">
+                        <i class="fa-solid fa-user-group text-[30px] lg:text-[40px] text-[#c1f0d0]"></i>
+                        <p class="mt-[15px] lg:mt-[25px] lg:text-[25px] font-medium text-white">Hire a Shopify expert</p>
+                        <p class="mt-[10px] lg:mt-[15px] lg:text-[21px] w-[349px] leading-[29px] text-white pr-[30px] lg:pr-[0px]">Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Third Page -->
+
+        <div class="ml-4 lg:ml-[0px] mt-[60px] lg:mt-[140px] lg:h-[2120px]">
+            <p class="mx-[17px] lg:mx-[0px] text-[28px] lg:text-[45px] text-center">With you wherever you’re going</p>
+            <p class="mx-[25px] lg:mx-[0px] text-[18px] lg:text-[25px] text-center lg:w-[700px] lg:ml-[500px] mt-[20px] text-[#7e7178]">One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</p>
+ 
+            <div class="lg:flex mt-20 lg:mt-[80px] lg:ml-[80px]">
+                <div>
+                    <video class="hidden lg:block w-[720px]" muted="muted" loop="loop" playsinline="playsinline" data-autoplay="true" data-lazyload="true" data-poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg" data-event-page="homepage" data-event-category="homepage" data-event-action="sell" data-event-label="video-toggle" class="video__video" poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg"><source data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm" type="video/webm" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm"><source data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-e91e64db2d38816861b2eb3243eb9d8b28225f47269954d9f257cc850bb2f33a.mp4" type="video/mp4" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-e91e64db2d38816861b2eb3243eb9d8b28225f47269954d9f257cc850bb2f33a.mp4"></video>
+                </div>
+                <div class="lg:mt-[120px] lg:ml-[140px] lg:w-[610px]">
+                    <p class="text-[25px] lg:text-[42px]">Sell everywhere</p>
+                    <p class="lg:text-[21px] mt-[20px] mr-8 lg:mr-[0px] text-[#7e7178]">Use one platform to sell products to anyone, anywhere—in person with Point of Sale and online through your website, social media, and online marketplaces.</p>
+                    <div class="flex mt-[20px] hover:cursor-pointer">
+                        <p class="lg:text-[25px] font-medium text-[#3c8060]">Explore ways to sell</p>
+                        <i class="fa-solid fa-arrow-right-long pt-[5px] lg:pt-[10px] pl-[10px] lg:text-[23px] text-[#3c8060]"></i>
+                    </div>
+                </div>
+                <div>
+                    <video class="lg:hidden w-[720px] pr-6 lg:pr-[0px] mt-[25px] lg:mt-[0px]" muted="muted" loop="loop" playsinline="playsinline" data-autoplay="true" data-lazyload="true" data-poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg" data-event-page="homepage" data-event-category="homepage" data-event-action="sell" data-event-label="video-toggle" class="video__video" poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg"><source data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm" type="video/webm" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm"><source data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-e91e64db2d38816861b2eb3243eb9d8b28225f47269954d9f257cc850bb2f33a.mp4" type="video/mp4" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-e91e64db2d38816861b2eb3243eb9d8b28225f47269954d9f257cc850bb2f33a.mp4"></video>
+                </div>
+            </div>
+
+            <div class="lg:flex mt-[30px] lg:mt-[0px] lg:ml-[80px]">
+                <div class="lg:mt-[190px] lg:ml-[110px] lg:w-[610px]">
+                    <p class="text-[25px] lg:text-[42px] ">Market your business</p>
+                    <p class="lg:text-[21px] mt-[20px] mr-8 lg:mr-[0px] text-[#7e7178]">Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.</p>
+                    <div class="flex mt-[20px] hover:cursor-pointer">
+                        <p class="lg:text-[25px] font-medium text-[#3c8060]">Explore how to market your business</p>
+                        <i class="fa-solid fa-arrow-right-long pt-[5px] lg:pt-[10px] pl-[10px] lg:text-[23px] text-[#3c8060]"></i>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-[800px] pr-6 lg:pr-[0px] mt-[25px] lg:mt-[0px]" alt="" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-large-213dc76dc5482456e02e34465bab786df62a6c07de2c9fcd4937a7b52813b56d.jpg?quality=50 2x" class=" lazyloaded" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-large-213dc76dc5482456e02e34465bab786df62a6c07de2c9fcd4937a7b52813b56d.jpg?quality=50 2x">
+                </div> 
+            </div>
+
+            <div class="lg:flex mt-[40px] lg:ml-[80px] mb-[80px] lg:mb-[0px]">
+                <div>
+                    <img class="hidden lg:block w-[770px]" src="/photo/sales.png" alt="">
+                </div>
+                <div class="lg:mt-[120px] lg:ml-[110px] lg:w-[550px]">
+                    <p class="text-[25px] lg:text-[42px] ">Manage everything</p>
+                    <p class="lg:text-[21px] mt-[20px] mr-8 lg:mr-[0px] text-[#7e7178]">Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.</p>
+                    <div class="flex mt-[20px] hover:cursor-pointer">
+                        <p class="lg:text-[25px] font-medium text-[#3c8060]">Explore how to market your business</p>
+                        <i class="fa-solid fa-arrow-right-long pt-[5px] lg:pt-[10px] pl-[10px] lg:text-[23px] text-[#3c8060]"></i>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-[770px] pr-6 lg:pr-[0px] mt-[25px] lg:mt-[0px] lg:hidden" src="/photo/sales.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Fourth Page -->
+
+        <div class="bg-[#f3fcf4] pl-4 lg:h-[750px] lg:pt-[120px] lg:pl-[100px] pt-[60px]  pb-[100px] lg:pb-[0px]">
+            <p class="text-[28px] lg:text-[40px] text-[#214c40]">Explore more from Shopify in India</p>
+            
+            <div class="lg:flex mt-[60px] bg-white w-[93%]">
+                <img class="image card-collection__card-image lazyloaded object-center lg:hidden object-cover h-[400px]" alt="" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-small-432c16e7cd8ec09f3ae3aca42c58775001d5dc511e70608476ed7ee0e2d2e2c5.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-large-e71ce2bf3f3cfb6b7688a41f7da482ff268a3a4964652abbc9bd5e5252f2839b.jpg?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-small-432c16e7cd8ec09f3ae3aca42c58775001d5dc511e70608476ed7ee0e2d2e2c5.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-large-e71ce2bf3f3cfb6b7688a41f7da482ff268a3a4964652abbc9bd5e5252f2839b.jpg?quality=50 2x">
+                <div class="pt-[40px] pl-[25px] lg:pl-[40px]">
+                    <p class="font-bold">START</p>
+                    <p class="mt-[15px] text-[22px] mr-8 lg:mr-[0px] lg:text-[30px] lg:w-[600px] lg:leading-[40px]">Launch your store with the help of a Shopify Expert</p>
+                    <p class="mt-[18px] lg:text-[20px] mr-8 lg:mr-[0px] lg:w-[600px] lg:leading-[30px] text-[#7e7178]">Find hundreds of experts from India ready to help you get your store up and running, from choosing a theme to building a fully customized site.</p>
+                    <div class="flex mt-[18px] pb-[30px] lg:pb-[0px] hover:cursor-pointer ">
+                        <p class="lg:text-[22px] font-medium text-[#3c8060]">Browse Experts in India</p>
+                        <i class="fa-solid fa-arrow-right-long pt-[5px] lg:pt-[10px] pl-[10px] lg:text-[23px] text-[#3c8060]"></i>
+                    </div>
+                </div>
+                <img class="image card-collection__card-image lazyloaded hidden lg:block ml-[120px]" alt="" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-small-432c16e7cd8ec09f3ae3aca42c58775001d5dc511e70608476ed7ee0e2d2e2c5.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-large-e71ce2bf3f3cfb6b7688a41f7da482ff268a3a4964652abbc9bd5e5252f2839b.jpg?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-small-432c16e7cd8ec09f3ae3aca42c58775001d5dc511e70608476ed7ee0e2d2e2c5.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-large-e71ce2bf3f3cfb6b7688a41f7da482ff268a3a4964652abbc9bd5e5252f2839b.jpg?quality=50 2x">
+            </div>
+        </div>
+
+
+        <!-- Fifth page -->
+
+        <div class="pl-4 lg:pt-[70px] lg:pl-[100px] lg:h-[1700px] mt-[30px] lg:mt-[0px] pr-6 lg:pr-[0px]">
+            <p class="text-[26px] lg:text-[40px] lg:w-[700px] lg:leading-[50px] text-[#212326]">Empowering independent business owners everywhere</p>
+            <p class="text-[21px] lg:text-[30px] lg:w-[900px] mt-[30px] text-[#212326]">Millions of businesses in <b>175 countries</b> around the world have made over <b>$496 billion USD</b> in sales using Shopify.</p>
+            <div class="flex mt-[28px] hover:cursor-pointer">
+                <p class="lg:text-[22px] font-medium text-[#3c8060]">Learn more about Shopify</p>
+                <i class="fa-solid fa-arrow-right-long pt-[5px] lg:pt-[10px] pl-[10px] lg:text-[23px] text-[#3c8060]"></i>
+            </div>
+
+
+            <div class="lg:flex mt-20 lg:mt-[200px] lg:w-[93%] bg-[#112e25] pb-[70px] lg:pb-[0px]">
+                <div>
+                    <img class="lg:w-[750px] lg:h-[900px] object-center object-cover h-[300px]" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/alicia-souza/alicia-souza-testimonial@mobile-34e68494f20c9f325956f42d36a32c4dceab3772fe7342a74f8408ee512c23a4.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/alicia-souza/alicia-souza-testimonial@mobile-2x-f71c34cbddd8f1c31fd2b3da690be53b6ddf603e3f490bcb4fb1492e002df6c0.jpg 2x" alt="" class=" lazyloaded" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/alicia-souza/alicia-souza-testimonial@mobile-34e68494f20c9f325956f42d36a32c4dceab3772fe7342a74f8408ee512c23a4.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/alicia-souza/alicia-souza-testimonial@mobile-2x-f71c34cbddd8f1c31fd2b3da690be53b6ddf603e3f490bcb4fb1492e002df6c0.jpg 2x">
+                </div>
+                <div class="">
+                    <p class="text-white text-[21px] lg:text-[38px] lg:w-[600px] pr-[30px] lg:pr-[0px] pl-[30px] lg:pl-[100px] pt-[40px] lg:pt-[80px] text-center font-medium">“Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up and running. It was stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”</p>
+                    <img class="lazyloaded pl-[100px] lg:pl-[280px] mt-[30px] lg:mt-[60px] " alt=""  data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-alicia-souza-small-4ac1bd956b9bf4d8fd78b6597f24ba9379714861042d3a199065b704a11657e6.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-alicia-souza-large-140eb3cca92ad104d99d48e364aa08b2caaec5501922eeb3916546718de63152.png?quality=50 2x"  sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-alicia-souza-small-4ac1bd956b9bf4d8fd78b6597f24ba9379714861042d3a199065b704a11657e6.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-alicia-souza-large-140eb3cca92ad104d99d48e364aa08b2caaec5501922eeb3916546718de63152.png?quality=50 2x">
+                    <p class="text-white text-[16px] lg:text-[25px] mt-[30px] lg:mt-[40px] ml-[100px] lg:ml-[240px] font-medium">Alicia | Alicia Souza</p>
+                </div>
+            </div>
+
+            <div class="lg:flex mt-[80px] lg:ml-[30px] pb-[90px] ml-[20px]">
+                <div class="flex">
+                    <img class="image logo-soup__image lazyloaded lg:w-[120px]" alt="Bajaao" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/bajaao-small-6ca0459c2a2fc6a57654d85cd1f053828d7fee97ecf7ff6dd8a1c460d0a5d344.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/bajaao-large-90b80d8dca23c6010844c15073c5682e366e2a7cce83c3906023254ddc0f118f.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/bajaao-small-6ca0459c2a2fc6a57654d85cd1f053828d7fee97ecf7ff6dd8a1c460d0a5d344.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/bajaao-large-90b80d8dca23c6010844c15073c5682e366e2a7cce83c3906023254ddc0f118f.png?quality=50 2x">
+                    <img class="image logo-soup__image lazyloaded lg:w-[110px] ml-[90px] lg:ml-[100px]" alt="John Jacobs" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/johnjacobs-small-79aa379de8a1c0d6df1c33af8c63a677871164315ccbc495423aeaead650d53a.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/johnjacobs-large-64648953616375e0c0cdf42f66d2dac5d5d42c1fd73c36479bbfadde18215515.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/johnjacobs-small-79aa379de8a1c0d6df1c33af8c63a677871164315ccbc495423aeaead650d53a.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/johnjacobs-large-64648953616375e0c0cdf42f66d2dac5d5d42c1fd73c36479bbfadde18215515.png?quality=50 2x">
+                </div>
+                <div class="flex mt-[20px] lg:mt-[0px]">
+                    <img class="image logo-soup__image lazyloaded w-[100px] mt-[15px] h-[40px] lg:ml-[100px]" alt="Kylie" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kylie-small-4e25b192755f809e9795d9f3722f3fa6b46da1fdc2a48b3ec8b6311f50f83ac7.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kylie-large-cc52236a0d0155a055cdcb79674ed7d09e34dad57775fdacfcf5fe35a54573fe.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kylie-small-4e25b192755f809e9795d9f3722f3fa6b46da1fdc2a48b3ec8b6311f50f83ac7.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kylie-large-cc52236a0d0155a055cdcb79674ed7d09e34dad57775fdacfcf5fe35a54573fe.png?quality=50 2x">
+                    <img class="image logo-soup__image lazyloaded w-[120px] mt-[15px] ml-[90px] lg:ml-[100px] h-[40px]" alt="Nush" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nush-small-04d75ec8d5b3e20b6e227006c23759c8b65efd482808aff0fc17140c5efb36cc.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nush-large-700def69c5dedebecfbd66e65596eb777f090ed413fe4bade3f8547524c9b6c0.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nush-small-04d75ec8d5b3e20b6e227006c23759c8b65efd482808aff0fc17140c5efb36cc.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nush-large-700def69c5dedebecfbd66e65596eb777f090ed413fe4bade3f8547524c9b6c0.png?quality=50 2x">
+                </div>
+                <div class="flex mt-[20px] lg:mt-[0px]">
+                   <img class="image logo-soup__image lazyloaded w-[120px] lg:ml-[100px]" alt="Yogabar" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/yogabar-small-a41c8bbe605289256552b537eb1bbf993845442c3af43ff4f8f1ed932a7b3609.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/yogabar-large-5e1859ae4c2493c4b21db6bd0029982f0ed35a632bdb24f9bacca6d553341986.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/yogabar-small-a41c8bbe605289256552b537eb1bbf993845442c3af43ff4f8f1ed932a7b3609.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/yogabar-large-5e1859ae4c2493c4b21db6bd0029982f0ed35a632bdb24f9bacca6d553341986.png?quality=50 2x">
+                    <img class="image logo-soup__image lazyloaded w-[120px] ml-[90px] lg:ml-[100px]" alt="Star Struck" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/starstruck-small-6d49ff528f3ef3217015f906a1ece473e2559688669d00e2b88e7be4f65ce3bf.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/starstruck-large-f1878004d9a8b2965ddda61f9860c542fe63c6bbd4f9b9674894f4c34ecc05ae.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/starstruck-small-6d49ff528f3ef3217015f906a1ece473e2559688669d00e2b88e7be4f65ce3bf.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/starstruck-large-f1878004d9a8b2965ddda61f9860c542fe63c6bbd4f9b9674894f4c34ecc05ae.png?quality=50 2x">
+                </div>
+                <img class="image logo-soup__image lazyloaded w-[120px] ml-[90px]  lg:ml-[100px] mt-[20px] lg:mt-[0px]" alt="Mcaffeine" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/mcaffeine-small-0c55170838a60e6a490dac7732d44f988f754de89d790de26b0d8e50a01029b4.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/mcaffeine-large-58ebe816c20a443da0ce4d32256d4b1e48ec46cae26cb7a2b0f595ea91fdd795.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/mcaffeine-small-0c55170838a60e6a490dac7732d44f988f754de89d790de26b0d8e50a01029b4.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/mcaffeine-large-58ebe816c20a443da0ce4d32256d4b1e48ec46cae26cb7a2b0f595ea91fdd795.png?quality=50 2x">
+            </div>
+        </div>
+
+         <!-- Sixth Page -->
+
+         <div class="lg:flex bg-[#fbf7ed]  h-[830px] pr-6 lg:pr-[0px] pl-4 lg:pl-[0px]">
+            <div class="pt-[100px] lg:pl-[100px] lg:w-[50%]">
+                <p class="text-[28px] lg:text-[50px] w-[300px] lg:w-[600px] lg:leading-[60px]">Get the help you need, every step of the way</p>
+                <div class="lg:flex mt-[50px] lg:mt-[80px]">
+                    <div class="lg:w-[320px]">
+                        <p class="lg:text-[25px] font-medium leading-[20px]">Shopify support</p>
+                        <p class="mt-[13px] lg:mt-[20px] mr-[50px] lg:mr-[0px] lg:text-[20px] text-[#7e7178]">Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.</p>
+                        <div class="flex mt-[17px] hover:cursor-pointer">
+                            <p class="lg:text-[20px] font-medium text-[#3c8060]">Contact support</p>
+                            <i class="fa-solid fa-arrow-right-long pt-[5px] lg:pt-[7px] pl-[10px] lg:text-[20px] text-[#3c8060]"></i>
+                        </div>
+                    </div>
+                    <div class="lg:w-[320px] lg:ml-[40px] mt-[50px] lg:mt-[0px]">
+                        <p class="lg:text-[25px] font-medium lg:leading-[20px]">Shopify App Store</p>
+                        <p class="mt-[13px] lg:mt-[20px] lg:text-[20px] lg:w-[280px] text-[#7e7178]">Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.</p>
+                        <div class="flex mt-[17px] hover:cursor-pointer">
+                            <p class="lg:text-[20px] font-medium text-[#3c8060]">Visit the Shopify App Store</p>
+                            <i class="fa-solid fa-arrow-right-long pt-[5px] lg:pt-[7px] pl-[10px] lg:text-[20px] text-[#3c8060]"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[50px] lg:mt-[60px]">
+                    <p class="lg:text-[22px] font-medium lg:leading-[20px]">Shopify Experts Marketplace</p>
+                    <p class="mt-[13px] lg:mt-[20px] lg:text-[20px] lg:w-[280px] text-[#7e7178]">Hire a Shopify expert to help you with everything from store setup to SEO.</p>
+                    <div class="flex mt-[17px] hover:cursor-pointer">
+                        <p class="text-[14px] lg:text-[20px] font-medium text-[#3c8060]">Explore the Shopify Experts Marketplace</p>
+                        <i class="fa-solid fa-arrow-right-long pt-[5px] lg:pt-[7px] pl-[10px] lg:text-[23px] text-[#3c8060]"></i>
+                    </div>
+                </div>
+
+            </div>
+            <img class="hidden lg:block lg:w-[50%] lg:h-[830px] lg:ml-[60px]" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/help@mobile-d425d91a15904a11c2c968cbc5d0365bc1db3ddb0b3c1e6d8582fa9138178084.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/help@mobile-2x-8dcf429030287e976fd72ee52924257cfe761f2b5d55f262df6adca7647ae004.jpg 2x" alt="" class=" lazyloaded" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/help@mobile-d425d91a15904a11c2c968cbc5d0365bc1db3ddb0b3c1e6d8582fa9138178084.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/help@mobile-2x-8dcf429030287e976fd72ee52924257cfe761f2b5d55f262df6adca7647ae004.jpg 2x">
+         </div>
+         <img class="lg:hidden object-center object-cover h-[400px]" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/help@mobile-d425d91a15904a11c2c968cbc5d0365bc1db3ddb0b3c1e6d8582fa9138178084.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/help@mobile-2x-8dcf429030287e976fd72ee52924257cfe761f2b5d55f262df6adca7647ae004.jpg 2x" alt="" class=" lazyloaded" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/help@mobile-d425d91a15904a11c2c968cbc5d0365bc1db3ddb0b3c1e6d8582fa9138178084.jpg 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/help@mobile-2x-8dcf429030287e976fd72ee52924257cfe761f2b5d55f262df6adca7647ae004.jpg 2x">
+
+         <!-- Seventh Page -->
+
+         <div class="pb-[200px] pl-4 lg:pl-[0px] mr-[20px] lg:mr-[0px]">
+            <div class="mt-[60px] lg:mt-[130px]">
+                <p class="text-[25px] lgLtext-[40px] text-center">Start your business journey with Shopify</p>
+                <p class="lg:text-[25px] lg:w-[1000px] text-center lg:ml-[360px] mt-[20px] text-[#7e7178]">Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.</p>
+                <div class="mt-[30px] w-[150px] lg:w-[200px] ml-[100px] lg:ml-[750px] ">
+                    <p class="text-[16px] lg:text-[22px] rounded-[5px] font-medium text-white px-[23px] py-[15px] lg:px-[30px] lg:py-[15px] bg-[#3c8060] hover:bg-[#214c40] cursor-pointer">Start free trial</p>
+                </div>
+            </div>
+         </div>
+
+
+         <!-- footer  -->
+
+         <div class="bg-[#112e25] lg:h-[800px] pl-4 lg:pl-[0px] pr-4 lg:pr-[0px]">
+
+            <div class="lg:pl-[100px] lg:w-[93%]">
+                <div class="lg:flex pt-[40px] lg:text-[21px] font-medium text-white ml-[40px] lg:ml-[0px]">
+                    <div class="flex">
+                        <p class="">About</p>
+                        <p class="ml-[25px]">Careers</p>
+                        <p class="ml-[25px]">Press and Media</p>
+                    </div>
+                    <div class="flex ml-[20px] lg:ml-[0px] mt-[10px] lg:mt-[0px]">
+                        <p class="ml-[25px]">Shopify Plus</p>
+                        <p class="ml-[25px]">Sitemap</p>
+                    </div>
+                </div>
+
+                <div class="text-[#233f37]">______________________________________________________________________________________________________________________________________________________________________________________________________________________________</div>
+
+                <div class="flex mt-[30px]">
+                    <div class="lg:flex">
+                        <div>
+                            <p class="lg:text-[18px] font-bold text-white">ONLINE STORE</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Sell online</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Features</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Example</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Website builder</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Online retail</p>
+                        </div>
+                        <div class="lg:ml-[110px] lg:mt-[30px]">
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Ecommerce website</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Domain names</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Themes</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Shopping cart</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Ecommerce hosting</p>
+                        </div>
+                        <div class="lg:ml-[80px] lg:mt-[30px]">
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Mobile commerce</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Ecommerce software</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Online store builder</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Dropshipping Business</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Stores themes</p>
+                        </div>
+                    </div>
+                    <div class="lg:flex ml-[20px] lg:ml-[0px]">
+                        <div class="lg:ml-[80px]">
+                            <p class="lg:text-[18px] font-bold text-white">POINT OF SALE</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Point of sale</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Features</p>
+                        </div>
+                        <div class="lg:ml-[80px] mt-[30px] lg:mt-[0px]">
+                            <p class="lg:text-[18px] font-bold text-white">SUPPORT</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">24/7 support</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Shopify Help Center</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Shopify Community</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Api documentation</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Free tools</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Free stock photos</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Websites for sale</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Logo Maker</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Business name generator</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Research</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Legal</p>
+                        </div>
+                        <div class="lg:ml-[80px] lg:w-[180px] mt-[30px] lg:mt-[0px]">
+                            <p class="lg:text-[18px] font-bold text-white">SHOPIFY</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Contact</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Partner program</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Affiliate program</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">App developers</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Investors</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Blog topics</p>
+                            <p class="mt-[13px] lg:text-[19px] text-[#b6babf] hover:text-white cursor-pointer">Community Events</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-[#233f37] mt-[20px]">______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</div>
+            <div class="lg:flex mt-[50px] lg:ml-[100px]">
+                <div class="flex ml-[40px] lg:ml-[40px]">
+                    <i class="fa-brands fa-facebook lg:text-[30px] text-white"></i>
+                    <i class="fa-brands fa-twitter lg:text-[30px] text-white ml-[30px]"></i>
+                    <i class="fa-brands fa-youtube lg:text-[30px] text-white ml-[30px]"></i>
+                    <i class="fa-brands fa-instagram lg:text-[30px] text-white ml-[30px]"></i>
+                    <i class="fa-brands fa-linkedin-in lg:text-[30px] text-white ml-[30px]"></i>
+                    <i class="fa-brands fa-pinterest lg:text-[30px] text-white ml-[30px]"></i>
+                </div>
+                <div class="flex lg:ml-[700px] mt-[20px] pb-[30px] lg:pb-[0px]">
+                    <p class="lg:text-[20px] text-[#b6babf] ">Terms of Services</p>
+                    <p class="lg:text-[20px] text-[#b6babf] ml-[15px]">Privacy Policy</p>
+                    <div class="flex text-white ml-[15px]">
+                        <i class="fa-solid fa-globe lg:text-[20px] pt-[5px]"></i>
+                        <p class="lg:text-[20px] ml-[10px]">India</p>
+                        <i class="fa-solid fa-sort-down lg:text-[20px] ml-[10px]"></i>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+
+        
+
+    </div>
+</body>
+</html>
