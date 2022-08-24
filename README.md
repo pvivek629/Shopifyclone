@@ -1,7 +1,7 @@
 # Shopifyclone
 
--Completed this Project us HTML and Talwind CSS
--This project took me 10 hours to complete whole project in both screen Laptop & Mobile.
+Completed this Project us HTML and Talwind CSS
+This project took me 10 hours to complete whole project in both screen Laptop & Mobile.
 
 
 # Live Link
